@@ -105,22 +105,18 @@ header {
   background-color: #30488a;
 }
 
-.Slides {
-  display: none;
+.slideshow {
+  background-color: black;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 .Slides img {
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
-  height: calc(100vh - 70px);
-}
-
-.slideshow {
-  background-color: black;
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+  height: 100vh;
 }
 
 .avancar,
