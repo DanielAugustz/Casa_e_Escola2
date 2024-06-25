@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1"
+    />
+    <title>Projeto Casa e Escola</title>
+    <link
+      rel="icon"
+      href="https://i.imgur.com/XNQpwU1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="logo">
+          <div class="logoimg">
+            <a href="#inicio"><img src="assets/images/Logo.png" /></a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#professor">Professor</a></li>
+            <li><a href="#aluno">Aluno</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <div class="menucell">
+            <button class="dropbtn">
+              <img src="assets/images/menu.png" />
+            </button>
+            <div class="dropdown">
+              <a href="#sobre">Sobre</a>
+              <a href="#professor">Professor</a>
+              <a href="#aluno">Aluno</a>
+              <a href="#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="slideshow" id="inicio">
+        <div class="Slides fade">
+          <img src="assets/images/bg.jpg" />
+          <div class="texto">Melhora a frequencia de entrega dos trabalhos</div>
+        </div>
+
+        <div class="Slides fade">
+          <img src="assets/images/bg2.jpg" />
+          <div class="texto2">Melhora a presença do aluno</div>
+        </div>
+
+        <div class="Slides fade">
+          <img src="assets/images/bg3.png" />
+          <div class="texto">Melhora a participação dos pais na escola</div>
+        </div>
+
+        <a class="voltar" onclick="passarSlides(-1)">❮</a>
+        <a class="avancar" onclick="passarSlides(1)">❯</a>
+      </section>
+
+      <section class="default blue" id="sobre">
+        <div class="titulos">Sobre nós</div>
+        <div class="bodys">
+          <div class="sobrenos">
+            <div class="sobrenos-esquerda">
+              <p>
+                O projeto "CASA E ESCOLA" tem como missão promover uma maior
+                integração entre a família e a escola, facilitando o
+                acompanhamento dos pais na educação dos filhos e fornecendo
+                ferramentas que contribuam para o desenvolvimento educacional e
+                pessoal das crianças. Com uma visão de criar um ambiente
+                educacional mais unido.
+                <br />
+                Os impactos que pretendemos gerar incluem um maior envolvimento
+                dos pais na educação dos filhos, facilidade de acesso às
+                informações escolares, redução de alunos que não entregam
+                tarefas no prazo e aumento da presença dos alunos na escola.
+              </p>
+            </div>
+            <div class="sobrenos-direita">
+              <img src="assets/images/Logo.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="default pink" id="professor">
+        <div class="titulos">área do professor</div>
+        <div class="bodys">
+          <div class="area-professor">
+            <div class="area-professor--esquerda">
+              <img src="assets/images/Professor.jpg" />
+            </div>
+            <div class="area-professor--direita">
+              <p>Os professores terão acesso a várias funcionalidades.</p>
+              <ul>
+                <li>Consultar<br />Turma</li>
+                <li>Alterar<br />Notas</li>
+                <li>Alterar<br />Frequência</li>
+                <li>Registrar<br />Atividades</li>
+                <li>Alterar<br />Agenda</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="default blue" id="aluno">
+        <div class="titulos">área do aluno</div>
+        <div class="bodys">
+          <div class="area-aluno">
+            <div class="area-aluno--esquerda">
+              <p>Os alunos terão acesso a algumas funcionalidades.</p>
+              <ul>
+                <li>Consultar<br />Notas</li>
+                <li>Consultar<br />Frequência</li>
+                <li>Grade<br />Curricular</li>
+                <li>Consultar<br />Agenda</li>
+              </ul>
+            </div>
+            <div class="area-aluno--direita">
+              <img src="assets/images/Aluno.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="default pink" id="contato">
+        <div class="titulos">Área para contato</div>
+        <div class="bodys">
+          <div class="form-contato">
+            <form>
+              <div>
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-name" name="nome" required />
+              </div>
+              <div>
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-email" name="email" required />
+              </div>
+              <div>
+                <label for="telefone">Telefone:</label>
+                <input
+                  type="tel"
+                  class="form-telefone"
+                  name="telefone"
+                  required
+                />
+              </div>
+              <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea class="form-mensagem" required></textarea>
+              </div>
+              <button type="submit" class="button" id="enviar">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="contatos">
+        <ul>
+          <li class="icones">
+            <img src="assets/images/icon-email.png" /><a
+              href="https://accounts.google.com/"
+              target="_blank"
+              class="iconestexto"
+              >contato@exemplo.com</a
+            >
+          </li>
+          <li class="icones">
+            <img src="assets/images/icon-telefono.png" />
+            <span class="iconestexto">(xx)xxxxx-xxxx</span>
+          </li>
+          <li class="icones">
+            <img src="assets/images/icon-instagram.png" alt="" />
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="iconestexto"
+              >@instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

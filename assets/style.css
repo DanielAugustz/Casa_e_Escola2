@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #2e486b;
+  color: #fff;
+  z-index: 5;
+  border: 2px solid #1e3149;
+}
+.header {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+.logoimg img {
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+}
+.menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 10px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.menu li a:hover {
+  border-bottom: 4px solid #db6262;
+  color: #ccc;
+}
+/* MENU CELULAR*/
+
+.menucell {
+  display: none;
+  position: relative;
+}
+.menucell img {
+  right: 0%;
+}
+.dropbtn {
+  background-color: #2e486b;
+  padding: 49%;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.dropdown a:hover {
+  color: #a14b4b;
+}
+
+.menucell:hover .dropdown {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #30488a;
+}
+
+.Slides {
+  display: none;
+}
+
+.Slides img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  height: calc(100vh - 70px);
+}
+
+.slideshow {
+  background-color: black;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.avancar,
+.voltar {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.avancar {
+  right: 0;
+}
+
+.voltar:hover,
+.avancar:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.texto,
+.texto2 {
+  color: white;
+  text-shadow: 4px 3px #2e486b;
+  font-size: 5vb;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  text-align: center;
+}
+.texto2 {
+  color: #2e486b;
+  text-shadow: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.default .titulos {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.default .bodys {
+  max-width: 1140px;
+  margin: auto;
+  min-height: 100px;
+}
+.default.blue {
+  background-color: #2e486b;
+}
+.default.pink {
+  background-color: #a14b4b;
+}
+.default.blue .titulos,
+.default.blue .bodys,
+.default.pink .titulos,
+.default.pink .bodys {
+  color: #bbb;
+}
+
+.sobrenos {
+  display: flex;
+}
+.sobrenos-esquerda {
+  flex: 1;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.sobrenos-direita {
+  width: 520px;
+  text-align: center;
+}
+.sobrenos-direita img {
+  width: 280px;
+  border-radius: 150px;
+  box-shadow: 0px 5px 10px #333;
+}
+.sobrenos-esuqerda p {
+  font-size: 14;
+  line-height: 25px;
+}
+
+.area-professor {
+  display: flex;
+}
+.area-professor--direita {
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 1.2;
+}
+.area-professor--direita p {
+  text-align: center;
+  margin-bottom: -80px;
+  margin-top: 90px;
+}
+.area-professor--direita ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 90px;
+  background-color: #2e486b;
+  border: 10px solid #2e486b;
+  border-radius: 100px;
+}
+.area-professor--direita ul li {
+  list-style: none;
+}
+.area-professor--direita li {
+  text-align: center;
+}
+.area-professor--esquerda {
+  width: 450px;
+  text-align: center;
+}
+.area-professor--esquerda img {
+  width: 280px;
+  border-radius: 150px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+.area-aluno {
+  display: flex;
+}
+
+.area-aluno--esquerda {
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 1.2;
+}
+.area-aluno--esquerda p {
+  text-align: center;
+  margin-bottom: -80px;
+  margin-top: 90px;
+}
+.area-aluno--esquerda ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 90px;
+  background-color: #a14b4b;
+  border: 10px solid #a14b4b;
+  border-radius: 100px;
+}
+.area-aluno--esquerda ul li {
+  list-style: none;
+}
+.area-aluno--esquerda li {
+  text-align: center;
+}
+.area-aluno--direita {
+  width: 450px;
+  text-align: center;
+}
+.area-aluno--direita img {
+  width: 280px;
+  border-radius: 150px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+.form-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-contato form {
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+}
+.form-contato div {
+  margin-bottom: 10px;
+}
+.form-contato label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #a14b4b;
+  color: #bbb;
+  border-style: none;
+  border-bottom: 2px solid #bbb;
+}
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: none;
+  background-color: #a14b4b;
+}
+input:-webkit-autofill {
+  transition: background-color 5000s;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #bbb !important;
+}
+.form-contato .form-contato textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+.form-contato button {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  background-color: #476791;
+  border: 1px solid #476791;
+}
+.form-contato .button:hover {
+  background-color: #2e486b;
+  cursor: pointer;
+}
+
+.contatos {
+  width: 100%;
+  background-color: #2e486b;
+  color: #bbb;
+  text-align: center;
+  padding: 10px 0;
+}
+.contatos ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contatos li {
+  padding: 0 30px;
+}
+.contatos ul,
+.contatos li {
+  list-style: none;
+}
+.contatos a {
+  text-decoration: none;
+  color: #bbb;
+}
+.contatos img {
+  width: 50px;
+}
+
+.icones {
+  position: relative;
+  display: inline-block;
+}
+
+.icones .iconestexto {
+  visibility: hidden;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  border: none;
+  z-index: 1;
+}
+
+.icones:hover .iconestexto {
+  visibility: visible;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu {
+    justify-content: center;
+  }
+
+  .sobrenos {
+    flex-direction: column;
+  }
+  .sobrenos-esquerda {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .sobrenos-direita {
+    width: auto;
+  }
+
+  .area-professor {
+    flex-direction: column;
+  }
+  .area-professor--esquerda {
+    width: auto;
+  }
+  .area-professor--direita {
+    font-size: 18px;
+  }
+  .area-professor--direita ul {
+    gap: 20px;
+  }
+
+  .area-aluno {
+    flex-direction: column-reverse;
+  }
+  .area-aluno--direita {
+    width: auto;
+  }
+  .area-aluno--esquerda {
+    font-size: 18px;
+  }
+  .area-aluno--esquerda ul {
+    gap: 20px;
+  }
+  .contatos li {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    max-width: 80%;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menucell {
+    display: block;
+    left: 35%;
+  }
+  .sobrenos {
+    flex-direction: column;
+  }
+  .sobrenos-esquerda {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .sobrenos-direita {
+    width: auto;
+  }
+
+  .area-professor {
+    flex-direction: column;
+  }
+  .area-professor--esquerda {
+    width: auto;
+  }
+  .area-professor--direita {
+    font-size: 13px;
+  }
+  .area-professor--direita ul {
+    gap: 10px;
+  }
+
+  .area-aluno {
+    flex-direction: column-reverse;
+  }
+  .area-aluno--direita {
+    width: auto;
+  }
+  .area-aluno--esquerda {
+    font-size: 13px;
+  }
+  .area-aluno--esquerda ul {
+    gap: 10px;
+  }
+
+  .contatos ul {
+    font-size: 10px;
+  }
+  .contatos li {
+    padding: 0 5px;
+  }
+}
